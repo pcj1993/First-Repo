@@ -12,6 +12,6 @@ library(tidyverse)
 library(ggplot2)
 
 storms %>%
-ggplot(mapping = aes(x = status, fill = status)) +
+ggplot(mapping = aes(x = status)) +
   geom_bar(show.legend = FALSE)
 ```
