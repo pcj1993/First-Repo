@@ -1,0 +1,17 @@
+---
+title: "Week 5"
+format:
+  html:
+    self-contained: true
+---
+
+
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+
+storms %>%
+ggplot(mapping = aes(x = status, fill = status)) +
+  geom_bar(show.legend = FALSE)
+```
